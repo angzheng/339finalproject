@@ -107,7 +107,7 @@ h2 {
 }
 
 #travel-cover {
-  background-image: url(/assets/rockymtrainbow.jpg);
+  background-image: url(../assets/rockymtrainbow.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -154,7 +154,7 @@ h2 {
 
 .home_gallery div:first-child {
   grid-column: -6 / span 5;
-  background-image: url(/assets/journal.jpg);
+  background-image: url(../assets/journal.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -163,7 +163,7 @@ h2 {
 
 .art_gallery div:first-child {
   grid-column: 1 / span 3;
-  background-image: url(/assets/monet.JPG);
+  background-image: url(../assets/monet.JPG);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
