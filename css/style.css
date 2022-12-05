@@ -1,0 +1,394 @@
+footer {
+  background-color: #e7f3ff;
+  color: rgb(0, 0, 0);
+  padding: 30px;
+  text-align: center;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+  background-color: white;
+}
+
+body {
+  font-family: 'Montserrat', serif;
+  color: rgb(8, 8, 8);
+  align-items: center;
+}
+
+a {
+  color: rgb(8, 8, 8);
+  text-decoration: none;
+}
+
+.home_img {
+  width: 100%;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  margin: 5px 5px 5px 5px;
+}
+
+h1 {
+  font-family: 'Montserrat', 'GillSans';
+  font-feature-settings: "ss01";
+  font-weight: 100;
+  line-height: 2.1;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-size: 35px;
+  color: rgb(8, 8, 8);
+  position: relative;
+  top: 15px;
+}
+
+#menu-icon {
+  position: absolute;
+  left: 40px;
+  top: 40px;
+}
+
+.nav_item a {
+  font-family: 'Montserrat';
+  font-feature-settings: "ss01";
+  font-weight: 100;
+  line-height: 2.5;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-size: 16px;
+  color: rgb(112, 76, 106);
+}
+
+.nav_item img {
+  width: 30px;
+}
+
+.nav_item {
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+/* positions the default position for the skip class element*/
+.skip {
+  position: absolute;
+  top: -40px;
+}
+
+.about {
+  text-align: center;
+}
+
+.cover-image {
+  /* object-fit: cover; */
+  background-size: cover;
+  width: 100%;
+}
+
+.overview {
+  text-align: center;
+  padding: 5%;
+}
+
+.cover-image {
+  background-attachment: fixed; /* Parallax effect */     
+  background-position: center;  /* Parallax effect */
+  background-repeat: no-repeat; /* Parallax effect */
+  background-size: cover;       /* Parallax effect */
+  color: black;
+  height: 500px;  
+  text-align: center;
+  font-size: 25px;
+}
+
+#travel-cover {
+  background-image: url(/assets/rockymtrainbow.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home_gallery {
+  display: grid;
+  row-gap: 15px;
+  /* column-gap: 15px; */
+  margin: auto;
+} 
+
+.art_gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 15px;
+  /* column-gap: 15px; */
+  width: 80%;
+} 
+
+.art_gallery img {
+  border: solid 10px #000000;
+  margin: 10px;
+  width: 100%;
+  grid-column: 1 / 2
+}
+
+#art-text {
+  grid-column: 1 / 2;
+}
+
+.travel_gallery img {
+  border: solid 10px #000000;
+  margin: 10px;
+  width: 75%;
+}
+
+.travel_gallery {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.home_gallery div:first-child {
+  grid-column: -6 / span 5;
+  background-image: url(/assets/journal.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.art_gallery div:first-child {
+  grid-column: 1 / span 3;
+  background-image: url(/assets/monet.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+/* STYLE ELEMENTS BASED ON ACTIONS OR EVENTS --------------------------------- */
+
+/* positions the skip class element when it is in focus*/
+.skip:focus {
+  position: absolute;
+  top: 20px;
+  z-index: 2;
+}
+
+/* styles all elements when in focus*/
+:focus {  
+ border: 2px solid black;
+}
+
+/* bolds the current page in the navigation */
+.selected {
+  font-weight: 1000;
+}
+
+/* The side navigation menu */
+#page_links {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #e7f3ff; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.nav_item a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: rgb(8, 8, 8);
+  display: block;
+  transition: 0.3s;
+}
+
+/* change their color when you mouse over the navigation links  */
+.nav_item a:hover {
+  opacity: 50%;
+}
+
+#close-icon :hover {
+  opacity: 50%;
+}
+
+/* Position and style the close button (top right corner) */
+/* #close-icon {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+} */
+
+/* Style page content - push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+/* /* MEDIA QUERY FOR SCREEN SIZES GREATER THAN 700PX --------------------------------- */
+@media only screen and (min-width: 700px) {
+
+  #page_links {
+    all: unset;
+  }
+
+  .nav_item{
+    all: unset;
+  }
+
+  /* align nav links to the center in one row */
+  #page_links {
+    width: 100% !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .nav_item a {
+    font-family: 'Montserrat';
+    font-feature-settings: "ss01";
+    font-weight: 100;
+    line-height: 2.5;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: 16px;
+    color: rgb(112, 76, 106);
+  }
+  
+  .nav_item {
+    margin: auto;
+  }
+
+  .nav_item img {
+    width: 30px;
+  }
+
+  .art_gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 15px;
+    /* column-gap: 15px; */
+    margin: auto;
+    align-self: center;
+  }
+
+  .art_gallery div:first-child {
+    grid-column: 1 / span 5;
+  }
+
+  #art-text {
+    grid-column: 1 / span 5;
+  }
+
+  #art_img1, #art_img4, #art_img7 {
+    grid-column: 1 / span 1;
+  }
+
+  #art_img2, #art_img5, #art_img8 {
+    grid-column: 2 / span 3;
+  }
+
+  #art_img3, #art_img6, #art_img9 {
+    grid-column: 5 / span 1;
+  }
+  
+  .travel_gallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  .travel_gallery :nth-child(3n+3) {
+      width: 50%;
+  }
+
+  .travel_gallery img {
+    border: solid 10px #000000;
+    margin: 10px;
+    width: 30%;
+    align-self: center;
+  }
+
+  .hide-on-desktop {
+    display: none;
+  }
+}
+
+/* /* MEDIA QUERY FOR SCREEN SIZES GREATER THAN 900PX --------------------------------- */
+@media only screen and (min-width: 900px) {
+  /* align nav links to the center in one row */
+  #page_links {
+    align-items: flex-start;
+    justify-content:flex-start;
+    width: 100%;
+  }
+
+  .nav_item {
+    margin: 20px;
+  }
+
+  #art_img1, #art_img4, #art_img7 {
+    grid-column: 1 / span 2;
+  }
+
+  #art_img2, #art_img5, #art_img8 {
+    grid-column: 3 / span 1;
+  }
+
+  #art_img3, #art_img6, #art_img9 {
+    grid-column: 4 / span 2;
+  }
+  
+  .travel_gallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  .travel_gallery img {
+    border: solid 10px #000000;
+    margin: 10px;
+    width: 25%;
+  }
+
+  .travel_gallery :nth-child(3n+3) {
+    width: 25%;
+  }
+  
+  .nav_item a {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+  
+  h1 {
+    font-size: 45px;
+  }
+}
