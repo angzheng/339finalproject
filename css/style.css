@@ -163,7 +163,7 @@ h2 {
 
 .art_gallery div:first-child {
   grid-column: 1 / span 3;
-  background-image: url(/assets/monet.jpg);
+  background-image: url(/assets/monet.JPG);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
