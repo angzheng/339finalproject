@@ -340,8 +340,8 @@ header {
   }
 }
 
-/* /* MEDIA QUERY FOR SCREEN SIZES GREATER THAN 900PX --------------------------------- */
-@media only screen and (min-width: 900px) {
+/* /* MEDIA QUERY FOR SCREEN SIZES GREATER THAN 1000PX --------------------------------- */
+@media only screen and (min-width: 1000px) {
   /* align nav links to the center in one row */
   #page_links {
     align-items: flex-start;
